@@ -20,6 +20,6 @@
 * 제네릭 : 타입을 사용시 지정 - 유연성 up
 * 튜플 : 배열의 인자개수+타입을 미리지정 
 
-## 참조 : 
+## 참조
 * 깃허브 <https://github.com/iamshaunjp/typescript-tutorial>
 * 유튜브 <https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=1>
