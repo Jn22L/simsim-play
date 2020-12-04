@@ -1,6 +1,9 @@
 # 심심해서 typescript 공부해봄
 
-## tsc -w : watch 모드 컴파일 -> 변경내용 실시간 반영
+## watch 모드 컴파일 -> 변경내용 실시간 반영
+```
+tsc -w
+```
 
 ## module 사용을 위한 tsconfig.json 셋팅변경부분
 ```
