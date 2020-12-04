@@ -8,7 +8,7 @@
 "module":"es2015" /* commonjs -> es2015 변경 */
 ```
 
-## module 사용하기 위해서 다음을 지정
+## module 사용하기 위해서 html 파일에 다음을 지정
 ```html
 <script type="module" ...
 ```
