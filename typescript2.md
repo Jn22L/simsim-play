@@ -1,4 +1,6 @@
-# typescript 공부후 생각나는것 이것저것 정리
+# 심심해서 typescript 공부해봄
+
+## tsc -w : watch 모드 컴파일 -> 변경내용 실시간 반영
 
 ## module 사용을 위한 tsconfig.json 셋팅변경부분
 ```
@@ -12,9 +14,12 @@
 ```
 ## module 은 ...
 * 지연로딩 : 화면 위쪽에 있어도, html 이 모두 렌더링 된후 실행되기 때문에 모든 태그에 접근 가능
-* 다른건 생각 안남
- 
+* 다른 특징은 ... 인터넷 찾아보기
+
+## 기타 생각나는것 
+* 제네릭 : 타입을 사용시 지정 - 유연성 up
+* 튜플 : 배열의 인자개수+타입을 미리지정 
+
 ## 참조 : 
 * 깃허브 <https://github.com/iamshaunjp/typescript-tutorial>
 * 유튜브 <https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=1>
-
