@@ -8,10 +8,10 @@
   <body>
     <div id="app">
       <input v-model="message" v-on:keyup.13="addTodo" ref="inputMessage" />
-      <button v-on:click="addTodo">등록</button>
+      <button @click="addTodo">등록</button>
       <li v-for="(todo, index) in todos" v-bind:key="todo.id">
-        {{ todo.text }}
-        <button v-on:click="delTodo(todo, index)" class="btn">❌</button>
+        <span @click="toggleTodo(todo, index, $event)">{{ todo.text }}</span>
+        <button @click="delTodo(todo, index)" class="btn">❌</button>
       </li>
     </div>
     <script src="index.js"></script>
@@ -46,7 +46,14 @@ var app = new Vue({
       this.message = "";
     },
     delTodo: function (todo, index) {
+      console.log("delTodo", todo, index);
       this.todos.splice(index, 1);
+    },
+    toggleTodo: function (todo, index, e) {
+      //let parentElm = e.target.parentNode;
+      //parentElm.getAttribute("class") === "complete" ? parentElm.removeAttribute("class") : parentElm.setAttribute("class", "complete");
+      let elm = e.target;
+      elm.getAttribute("class") === "complete" ? elm.removeAttribute("class") : elm.setAttribute("class", "complete");
     },
   },
 });
@@ -62,4 +69,7 @@ body {
   cursor: pointer;
   border: none;
   background: transparent;
+}
+.complete {
+  background: yellow;
 }
