@@ -1,3 +1,5 @@
+// vue CDN 으로 TODOLIST 만들어 보기 ( 2021.09.17 추석연휴 전날 )
+
 // index.html
 
 <html>
